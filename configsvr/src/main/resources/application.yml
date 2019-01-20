@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:///E:/workspace/projects/microservice/configsvr/src/main/resources/movieservice
+            - file:///E:/workspace/projects/microservice/configsvr/src/main/resources/userservice
